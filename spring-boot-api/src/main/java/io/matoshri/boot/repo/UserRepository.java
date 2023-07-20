@@ -1,2 +1,12 @@
-package io.matoshri.boot.repo;public interface UserRepository {
+package io.matoshri.boot.repo;
+
+import io.matoshri.boot.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    Optional<User> findByEmail(String email);
 }
