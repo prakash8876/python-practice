@@ -1,5 +1,8 @@
 # Author: Prakash
 # Licensed to: Matoshri Company
-import os
+'''
+Studying python from youtbue
+'''
+import os # os is moudle, importing it
 print("hello world!")
 print("congratulation!!!")
